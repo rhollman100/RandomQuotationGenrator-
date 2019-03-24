@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="stylesheet.css"> 
+  </head>
+<body>
+  <div class="box" id="mainBox">
+    <h1>Random Quote Generator</h1>
+    <p>How many quotes do you want to generate? 
+      <select name="noOfQuotes" id="selectValue">
+  <option id="optionOne" value=1>1</option>
+  <option id="optionTwo" value=2>2</option>
+  <option id="optionThree" value=3>3</option>
+  <option id="optionFour" value=4>4</option>
+  <option id="optionFive" value=5>5</option>
+</select>
+       What language? 
+      <select name="langOfQuotes" id="selectLang">
+  <option id="english" value='Eng'>English</option>
+  <option id="spanish" value='Span'>Spanish</option>
+</select>
+      </p>
+    <p>Click the orange button to  create a random beginning, middle and end</p>
+    <section id="quotes">
+      <div class="body">
+        <div id="quoteone"></div>
+        <div id="quotetwo"></div>
+        <div id="quotethree"></div>
+        <div id="quotefour"></div>
+        <div id="quotefive"></div>
+      </div>
+    </section>
+    <section class="options">
+      <button class="leave button" onclick="leaveProgram()">Leave </button>
+      <button type="button" onclick="newQuote()" class="new-quote button">New Quote</button>
+    </section>
+  </div>
+<div class="box" id="closeBox" style= "display:none">
+  <p>Thanks for using the random quotation generator</p>
+</div>
+<script src="file.js"></script>
+  </body>
+</html>
